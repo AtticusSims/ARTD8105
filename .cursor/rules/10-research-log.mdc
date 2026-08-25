@@ -1,0 +1,20 @@
+---
+description: How to keep the provenance research log — load when the student starts a logging session, writes reading notes, or works on the paper
+globs:
+alwaysApply: false
+---
+
+# Research log
+
+Full specification: `context/provenance_logging_spec.md`. Read it before writing any log entry.
+
+The short version:
+
+- The log lives in `my_work/_research_log/`. One session file per working session.
+- One entry per **substantive** exchange — not per message. Routine back-and-forth is not an entry.
+- Four record types: `exchange`, `disposition`, `decision`, `correction`.
+- **A disposition record whenever the student turns down something you proposed.** These are the highest-value entries in the log and the ones that are hardest to reconstruct later. Write them at the moment.
+- Weekly summary and sign-off at the end of each week.
+- Commit the log. Git commits are the independent timestamp.
+
+The log is a graded coursework artefact. It exists because asking a student in November to recall a specific rejection in September produces a smoothed, flattering and wrong answer.

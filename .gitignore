@@ -1,0 +1,36 @@
+# ── Readings ─────────────────────────────────────────────
+# Copyright. Never commit published PDFs to a repository.
+readings/
+my_work/readings/
+*.pdf
+
+# ── Anything large that is not evidence ──────────────────
+my_work/_local/
+_local/
+
+# ── Video and audio ──────────────────────────────────────
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.aiff
+
+# ── Raw camera and scan data ─────────────────────────────
+*.cr2
+*.nef
+*.arw
+*.dng
+*.raf
+
+# ── 3D working files — export the deliverable instead ────
+*.blend
+*.blend1
+
+# ── OS and tooling junk ──────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+.venv/
+__pycache__/
