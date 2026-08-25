@@ -13,7 +13,7 @@ You already have your own private repository from the session 1 homework. Add th
 
 ```bash
 cd path/to/artd8105-<yoursurname>
-git remote add course https://github.com/AtticusSims/ARTD8105-INSTRUCTOR.git
+git remote add course https://github.com/AtticusSims/ARTD8105.git
 git pull course main --allow-unrelated-histories
 ```
 
