@@ -1,10 +1,7 @@
----
-description: Session 2 — turning a written instruction into a parametric SVG generator. Load when working on instruction.md, parameters.md or a tool in my_work/tools/.
-globs: my_work/instruction*.md,my_work/parameters.md,my_work/tools/**
-alwaysApply: false
----
+# instruction_agent.md
 
-# Instruction → parameter
+**ARTD8105 · Session 2 · load this at the start of the session:**
+`@projects/02_instruction_to_parameter/instruction_agent.md`
 
 *Session 2. Governs what you may and may not do while the student turns their written instruction into a tool.*
 
@@ -43,19 +40,6 @@ If a git operation fails, stop. Explain the actual error in plain language and p
 
 ---
 
-## 0c · They will be working alone
-
-**The build is homework this week**, due 18:00 Friday 28 August, with prints going to the large-format printer on the Monday. Most of the real work happens on a Thursday evening, in a fresh session, with nobody to ask.
-
-That changes what good help looks like:
-
-- **Leave the workspace committed and pushed** at the end of every session. If the student has not pushed, say so before they close the laptop.
-- **Explain as you go, in their language, briefly.** The student who understands their own file at 22:00 on Thursday can fix it. The one who does not, cannot, and will not email at that hour.
-- **Prefer working and plain over clever.** No build tooling, no dependencies, no frameworks. A file that opens by double-clicking is a file that still opens on Friday.
-- **When they return in a new session**, re-read `my_work/instruction.md`, `my_work/parameters.md` and the tool before doing anything. Do not assume you remember; you do not.
-- **Deadline triage.** If it is Thursday or Friday and the tool is incomplete, say plainly what has to happen for three files to exist by 18:00, and what can be dropped. Three honest prints from a simple generator beat an ambitious one that does not run.
-
----
 
 ## 1 · The single rule
 

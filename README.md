@@ -52,9 +52,10 @@ git push                 # send your work to your own repository
 | | |
 |---|---|
 | **`my_work/`** | **Yours.** Everything you make lives here. A pull never touches it. |
-| `course/` | Guides, session briefs, templates, worked examples. **Read only.** |
-| `context/` | Reference the agent reads — the rubric, the logging spec, the glossary. **Read only.** |
-| `.cursor/rules/` | How the agent behaves. Cursor loads these by itself. **Read only.** |
+| `projects/` | One folder per session — the brief, and the agent file you load. **Read only.** |
+| `course/` | Guides and templates. **Read only.** |
+| `context/` | Reference the agent reads — rubric, logging spec, glossary. **Read only.** |
+| `.cursor/rules/` | Standing rules. Cursor loads these by itself. **Read only.** |
 
 **Start with `course/guides/00_start_here.md`.** If you are setting up, or you joined after session 1, go to `course/guides/getting_the_course_repo.md` first.
 
