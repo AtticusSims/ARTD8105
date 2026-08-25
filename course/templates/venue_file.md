@@ -16,8 +16,8 @@ last_updated:
 
 # [Venue] — [Track]
 
-*Built with `02_Venue_Interrogation_Protocol.md`. Load alongside
-`research_agent.md` whenever you ask for a judgement about quality or fit.*
+*Built with `course/guides/venue_interrogation_protocol.md`. Load alongside
+the standing rules in `.cursor/rules/`, which Cursor loads automatically, whenever you ask for a judgement about quality or fit.*
 
 ---
 
@@ -166,7 +166,7 @@ this a reconstruction rather than a pretence.*
 ## 6 · How to use this file with the agent
 
 ```
-@venue/<slug>.md @research_agent.md
+@venue/<slug>.md
 
 Score my [section] against the derived standard in the venue file. Name each
 criterion you apply and quote the file. Where the file is silent, say so

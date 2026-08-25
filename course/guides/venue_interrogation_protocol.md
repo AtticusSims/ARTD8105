@@ -115,7 +115,7 @@ That is a standard. You derived it. It is checkable.
 
 ## Phase 4 — Write the venue file
 
-Use `templates/venue_file.md`. The structure:
+Use `course/templates/venue_file.md`. The structure:
 
 ```markdown
 ---
@@ -195,7 +195,7 @@ The venue file is not finished when you write it.
 Once `venue/<slug>.md` exists:
 
 ```
-@venue/eva-london-2027.md @research_agent.md
+@venue/eva-london-2027.md
 
 Score my introduction against the derived standard in the venue file.
 Name each criterion you apply and quote the file. Where the file is

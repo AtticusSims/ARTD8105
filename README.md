@@ -9,13 +9,34 @@ This repository holds everything you need for the course. Open it in Cursor at t
 
 ## Setting it up — once, in session 2
 
-You already have your own private repository from the session 1 homework. Add this one as a second source, so course material lands inside your repo and updates reach you.
+You already have your own private repository from the session 1 homework. You add this one as a **second source** for it, so course material lands alongside your work and my updates reach you.
+
+**Full instructions, including what to do if you have no repository yet or if git is broken: `course/guides/getting_the_course_repo.md`.**
+
+Easiest way — paste this into Cursor:
+
+```
+Add the ARTD8105 course repository as a second remote called `course` and
+pull it in, so the course files sit alongside my own work in this same
+repository:
+
+    https://github.com/AtticusSims/ARTD8105.git
+
+Our histories are unrelated, so the pull needs --allow-unrelated-histories.
+Do not clone it into a subfolder.
+
+Commit anything I have outstanding first. Show me each command before you
+run it and say what it does. If something fails, stop and explain the error.
+```
+
+What that runs, which you should be able to read:
 
 ```bash
-cd path/to/artd8105-<yoursurname>
 git remote add course https://github.com/AtticusSims/ARTD8105.git
 git pull course main --allow-unrelated-histories
 ```
+
+> ⛔ **Do not `git clone` this repository into a folder inside your own.** A repository nested inside another repository breaks both — your commits stop covering it and GitHub shows an empty grey box where the files should be. It is a second remote, not a subfolder.
 
 That is the only complicated command in the course. After that:
 
@@ -34,6 +55,8 @@ git push                 # send your work to your own repository
 | `course/` | Guides, session briefs, templates, worked examples. **Read only.** |
 | `context/` | Reference the agent reads — the rubric, the logging spec, the glossary. **Read only.** |
 | `.cursor/rules/` | How the agent behaves. Cursor loads these by itself. **Read only.** |
+
+**Start with `course/guides/00_start_here.md`.** If you are setting up, or you joined after session 1, go to `course/guides/getting_the_course_repo.md` first.
 
 ### ⛔ Do not edit anything outside `my_work/`
 

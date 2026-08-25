@@ -39,16 +39,17 @@ There is one meta-level outcome of this course beyond the paper and the artifact
 
 | File | What it is | Read it |
 |---|---|---|
-| **`research_agent.md`** | The context file you load into Cursor | Read once yourself, then load every session |
-| **`01_Research_Development_Workbook.md`** | The eleven steps, with prompts | Work through it |
-| **`02_Venue_Interrogation_Protocol.md`** | How to reconstruct a venue's standards | At Step 4 |
-| **`03_Provenance_Logging_Spec.md`** | How your work gets recorded | Skim now, refer later |
-| **`04_Assessment_Rubric.md`** | How you are marked | Read in session 1 |
-| **`06_Git_and_GitHub_Setup.md`** | Twenty minutes of setup, then one command | Session 1 homework |
-| **`07_Readings_and_Sources.md`** | Where to legitimately get every reading | Session 1 |
-| **`templates/`** | Reading notes, idea evaluation, journal, peer review, venue file | As you reach them |
+| **`.cursor/rules/`** | How the agent is instructed to behave. Cursor loads these by itself | Read `00-course.mdc` once, so you know what to expect |
+| **`course/guides/getting_the_course_repo.md`** | Putting this repository inside your own, and keeping it updated | Session 2 |
+| **`course/guides/research_workbook.md`** | The eleven steps, with prompts | Work through it |
+| **`course/guides/venue_interrogation_protocol.md`** | How to reconstruct a venue's standards | At Step 4 |
+| **`context/provenance_logging_spec.md`** | How your work gets recorded | Skim now, refer later |
+| **`context/assessment_rubric.md`** | How you are marked | Read in session 1 |
+| **`course/guides/git_and_github_setup.md`** | Twenty minutes of setup, then one command | Session 1 homework |
+| **`course/guides/readings_and_sources.md`** | Where to legitimately get every reading | Session 1 |
+| **`course/templates/`** | Reading notes, idea evaluation, journal, peer review, venue file | As you reach them |
 
-*(`05_Ethics_Amendment_Brief.md` is instructor-facing — you do not need it.)*
+
 
 Two companion documents sit alongside these:
 
@@ -57,40 +58,47 @@ Two companion documents sit alongside these:
 
 ---
 
-## First session — 20 minutes
+## Getting set up
 
 > **One thing first, before any of this.** Your very first reading note — the one due in session 2 — is written **by hand, with no AI tool of any kind.** Not because AI is discouraged here; it is required for most of what follows. Because you cannot supervise a tool at a task you have never performed yourself, and the reading note is the task the whole reading stream is built on. Do one properly, unassisted, and then the tools are open. The single permanent exception, all term: never ask an agent to write the critical thinking section.
 
+This is session 1 homework, finished in session 2. If you are behind, **`course/guides/getting_the_course_repo.md`** is the step-by-step version and the agent runs most of it for you.
+
 1. **Install Cursor** and sign in. A subscription is required for the term.
-2. **Create a project folder** for your work. Everything lives here.
-3. **Copy this whole folder into it**, keeping the structure.
-4. **Open Cursor** in that folder and start a chat.
-5. **Load the agent file** — drag `research_agent.md` into the chat, or type `@research_agent.md`.
-6. Ask it to set up your workspace:
+
+2. **Create your project folder, make it a git repository, and put it on GitHub** — `course/guides/git_and_github_setup.md`. Twenty minutes, once. Add the instructor as a read-only collaborator; this is the step people skip and it is invisible until it matters.
+
+3. **Pull this course repository into yours** — `course/guides/getting_the_course_repo.md`. After that, `git pull course main` brings you every update I publish, and your own work is never touched.
+
+4. **Open Cursor on your project folder.** The rules in `.cursor/rules/` load themselves — there is nothing to drag into the chat. Read `.cursor/rules/00-course.mdc` once yourself so you know what the agent is under instruction to do, and what it is under instruction to refuse.
+
+5. **Ask the agent to check the setup rather than assume it:**
 
 ```
-@research_agent.md
+Read .cursor/rules/00-course.mdc and README.md, then check my setup and
+report what is missing. Am I inside a git repository? Is `origin` my own
+GitHub repository? Is there a `course` remote pointing at the instructor
+repository? Does my_work/ exist with the folders the README lists?
 
-Set up my workspace for ARTD8105. Create _research_log/ with the structure
-in 03_Provenance_Logging_Spec.md, initialise git, make the first commit,
-and confirm what you created. Then tell me what Step 1 asks of me.
+Report only. Do not fix anything yet.
 ```
 
-7. **Set up git and GitHub** — `06_Git_and_GitHub_Setup.md`. Twenty minutes, once. Add the instructor as a read-only collaborator; this is the step people skip and it is invisible until it matters.
-8. **Download the free readings** into a `readings/` folder — `07_Readings_and_Sources.md`. They become Cursor context.
-9. **Create `process_journal/`** and write your first entry within twenty-four hours of session 1. The template is in `templates/`. The journal is graded, it cannot be reconstructed later, and in session 11 you will read the whole thing back looking for your finding.
+6. **Download the free readings** into `my_work/_local/readings/` — `course/guides/readings_and_sources.md`. Git ignores that folder on purpose: the PDFs are copyrighted and must never be committed. They still work perfectly well as Cursor context from there.
 
-**Then, at the start of every session from now on**, paste this:
+7. **Write process journal entry #1** within twenty-four hours of session 1, into `my_work/process_journal/`, named by date. Copy the template out of `course/templates/` first — never fill one in where it sits. The journal is graded, it cannot be reconstructed later, and in session 11 you will read the whole thing back looking for your finding.
+
+**Then, from session 3 onwards**, open every working session with this:
 
 ```
-@research_agent.md @03_Provenance_Logging_Spec.md
+@context/provenance_logging_spec.md
 
-Start a logging session. Create today's session file in _research_log/sessions/
-and log every substantive exchange per the spec, including disposition records
-for the previous turn. I'm on workbook step S__.
+Start a logging session. Create today's session file in
+my_work/_research_log/sessions/ and log every substantive exchange per the
+spec, including disposition records for the previous turn. I'm on workbook
+step S__.
 ```
 
-The agent file does not persist between sessions, and neither does the logging instruction. Four short rituals carry the whole system: **start a session · `LOG CHECK` if it goes quiet · close the session · weekly summary.**
+The standing rules load themselves. The logging instruction does not — it is the one thing you have to say out loud each time. Four short rituals carry the whole system: **start a session · `LOG CHECK` if it goes quiet · close the session · weekly summary.**
 
 ---
 

@@ -17,7 +17,7 @@ Each step carries **💬 USE THE AGENT** blocks: worked starting prompts with `[
 
 **The agent is a research partner, not a decision-maker.** It is strong at finding, checking, structuring and critiquing. It is weak at knowing what matters, at judging your field, and at anything requiring taste. Everything it produces about the world needs verifying. Everything it produces about your work needs deciding on.
 
-**Load `research_agent.md` at the start of every session.** Read it once yourself. It tells the agent what it may and may not do, and you should know what you are entitled to expect.
+**The agent rules load themselves.** `.cursor/rules/` is read automatically by Cursor every time you open this folder — there is nothing to drag in. Read `.cursor/rules/00-course.mdc` once yourself, though: it tells the agent what it may and may not do, and you should know what you are entitled to expect.
 
 ---
 
@@ -51,7 +51,7 @@ You are not looking for your topic yet. You are learning what the field is curre
 ### Do
 
 1. Read **six papers** this fortnight. Two from the course reading list, four you find yourself.
-2. Write a **reading note** for each using `templates/reading_note.md`.
+2. Write a **reading note** for each using `course/templates/reading_note.md`.
 3. Build `territory_map.md`: the sub-conversations you can identify, who is in each, what they disagree about, and where the arguments seem to be going.
 
 ### 💬 USE THE AGENT
@@ -151,7 +151,7 @@ have to be cut. Do not rank them yet.
 # STEP 4 — Venue interrogation
 **Taught session 6, built in the 30 September week, due session 7 · Output: `venue/<slug>.md` for two or three venues**
 
-Run **`02_Venue_Interrogation_Protocol.md`** in full. Do not shortcut it — this is the step that makes every later critique accountable to something real.
+Run **`course/guides/venue_interrogation_protocol.md`** in full. Do not shortcut it — this is the step that makes every later critique accountable to something real.
 
 Choose candidates using the **Publication Venue Briefing** in the course materials. Pick venues that differ from each other: one accessible, one ambitious, one adjacent to your specific method.
 
@@ -199,13 +199,13 @@ does it not do, and what would my project add? Not a summary — a critique.
 # STEP 6 — Commit and declare
 **Due session 7 · 7 October · Output: `idea_evaluation.md` — ASSESSED**
 
-Pick one question. Complete `templates/idea_evaluation.md`.
+Pick one question. Complete `course/templates/idea_evaluation.md`.
 
 This template is adapted from Wu Ziwei's Idea Evaluation Template and covers: the narrowed problem, whether it is new or old, your method and its novelty, your three contributions, related work with critiques, expected results, discussion, a full figure list, and remaining tasks with milestones.
 
 Two additions specific to this course:
 
-**Declare your contribution type** — existence proof, method contribution, annotated portfolio, intermediate concept, critical/speculative, or empirical. The type determines what evidence you need. See `research_agent.md` §7. If you choose **empirical**, you need ethics approval and you need to start it now.
+**Declare your contribution type** — existence proof, method contribution, annotated portfolio, intermediate concept, critical/speculative, or empirical. The type determines what evidence you need. Contribution types are taught in session 6 and defined in `context/glossary.md`. If you choose **empirical**, you need ethics approval and you need to start it now.
 
 **Record your venue constraints** — word limit, format, anonymisation, deadline, from your Step 4 file. These constrain everything downstream; a 2,500-word short paper and a 12-page pictorial are different arguments, not the same argument at different lengths.
 
@@ -261,7 +261,7 @@ Sustained practice work, alongside the fabrication track.
 
 Do not record effort or mood. "I struggled for days" tells a reader nothing. *What* you struggled against tells them a great deal.
 
-**The agent log runs automatically** — see `03_Provenance_Logging_Spec.md`. Review the weekly summary and file corrections. That review is what makes the log evidence rather than exhaust.
+**The agent log runs automatically** — see `context/provenance_logging_spec.md`. Review the weekly summary and file corrections. That review is what makes the log evidence rather than exhaust.
 
 ### 💬 USE THE AGENT
 
@@ -321,7 +321,7 @@ section of the paper it belongs in.
 
 Two parts.
 
-**Ranking.** Everyone presents; everyone ranks all other presenters on Presentation Format, Academic Contribution, and Personal Learning, using `templates/peer_review.md`. Fast, and it forces discrimination.
+**Ranking.** Everyone presents; everyone ranks all other presenters on Presentation Format, Academic Contribution, and Personal Learning, using `course/templates/peer_review.md`. Fast, and it forces discrimination.
 
 **Paired deep review.** You are assigned one peer's draft and you review it **using the actual review form from their target venue**, from their venue file. You produce a written review in that venue's format.
 

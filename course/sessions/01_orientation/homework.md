@@ -27,7 +27,7 @@ If cost or payment is a problem for you, email me this week. Do not simply arriv
 
 ## 2 · Set up git and GitHub
 
-Work through **`06_Git_and_GitHub_Setup.md`**. About twenty minutes.
+Work through **`course/guides/git_and_github_setup.md`**. About twenty minutes.
 
 - [ ] Install git and set your name and UM email
 - [ ] Create a GitHub account **using your UM email address**
@@ -42,7 +42,7 @@ That last step is the one everybody forgets, and it is invisible until it matter
 
 ## 3 · Download the readings
 
-Work through **`07_Readings_and_Sources.md`** and download the freely available items into a `readings/` folder inside your project folder.
+Work through **`course/guides/readings_and_sources.md`** and download the freely available items into a `readings/` folder inside your project folder.
 
 Eleven of them are legitimately free. They become context for your agent later in the term, so it is worth doing properly now rather than collecting them one at a time.
 
@@ -54,7 +54,7 @@ Eleven of them are legitimately free. They become context for your agent later i
 
 **Then one paper of your own**, from the venue that matches the kind of designer you are. The table is on slide 51 of the session 1 deck and on the Notion page. Three rules: published in the last five years, taken from the named venue rather than from a search result, and full text you can actually open.
 
-Write **one reading note** on *your own* paper — not on Frayling — using `templates/reading_note.md`. Sections 1 through 4 and 7 only; skip *Form* and *Venue signal* for now, we come to those in session 6. About one page, about forty minutes. These are working notes, not essays.
+Write **one reading note** on *your own* paper — not on Frayling — using `course/templates/reading_note.md`. Sections 1 through 4 and 7 only; skip *Form* and *Venue signal* for now, we come to those in session 6. About one page, about forty minutes. These are working notes, not essays.
 
 > ### This first note is written without AI
 >
@@ -72,7 +72,7 @@ If your setup is not finished, write the note on paper and transcribe it later. 
 
 Write it **within twenty-four hours of class**, while you can still remember what you expected. Memory smooths: it tidies the false starts out of the sequence, and the false starts are the evidence.
 
-Copy `templates/process_journal_entry.md` into `process_journal/` in your repository, named by date. Answer these eight questions about today's workshop:
+Copy `course/templates/process_journal_entry.md` into `process_journal/` in your repository, named by date. Answer these eight questions about today's workshop:
 
 1. What did you expect to get back? Attach the slip you folded before handing over version one.
 2. What did you actually get? Photograph it.
@@ -106,7 +106,7 @@ Bring it printed, or email it to me before class.
 
 ## Also read this week
 
-**`08_Week1_Companion.md`** — the written version of today's lecture. Short.
+**`course/guides/you_have_been_programming_for_years.md`** — the written version of today's lecture. Short.
 
 **`Turning Practice into Research`** — the long guide. This is the one that matters. Everything in the course refers back to it, and reading it now will make the next four weeks make sense.
 

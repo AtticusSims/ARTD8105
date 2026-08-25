@@ -121,4 +121,4 @@ Tag every one VERIFIED or UNVERIFIED, and tell me which are open access
 and which need the Library.
 ```
 
-Then check the unverified ones yourself, and write a reading note for each using `templates/reading_note.md`.
+Then check the unverified ones yourself, and write a reading note for each using `course/templates/reading_note.md`.

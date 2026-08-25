@@ -5,92 +5,170 @@
 > *If a pull ever fails with "local changes would be overwritten", you edited something in here.*
 
 **ARTD8105 · Wednesday 26 August 2026 · 10:00–13:00 · Room G1015**
-*Follows directly from the two-round workshop in session 1. Bring your instruction.*
+*No lecture today. You talk first, then we build.*
 
 ---
 
-## Where we left off
+## What today is
 
-You wrote an instruction, somebody executed it, you read the gap, and you revised it. **Version two is what this session runs on.**
+Two halves.
 
-What the second round told you is that some of the gap closed and some of it did not. **The part that did not close is where the parameters are.**
+**The first eighty minutes are yours.** Everyone speaks for five minutes: who you are, what you think you are researching, and the paper you read. Fourteen people in a doctoral seminar who do not know what the others are working on is a waste of the only cohort you get, and I need to hear where you are starting from before I can pitch the rest of the term.
 
-Every open phrase in your instruction — *"at an angle," "somewhere along," "until it feels full," "roughly evenly," "a few"* — is a decision you did not make, which your executor then made for you. Twice, differently. Naming those decisions, giving each one a range, and choosing a value is what turns an instruction into a **method**.
+**The last hour is the machine.** We get everybody's Cursor working, put this repository inside yours, and take one instruction from text to tool on the projector. Then you start your own.
 
-That is also, exactly, what you do when you direct an AI to build something. So this session does both at once, and it is why this course does not begin with a programming tutorial.
-
-> **You may revise once more before you build.** You saw at the wall where your instruction was still loose or still too tight, so if you want to make a final revision, make it. Save it as `instruction_v3.md`, keep version two, and write one sentence saying what you changed and why. This is optional — if version two is what you want to build from, build from version two.
+You will not finish the tool in class. **You finish it this week**, and everything you need to do that is written down below — read it properly, because on Thursday night this page is the class.
 
 ---
 
-## Before class
+## Part one — five minutes each
 
-1. **Cursor working.** Installed, signed in, subscription active. Without this you cannot take part.
-2. **All four sheets photographed** and in your repository: `instruction_v1`, `execution_1`, `instruction_v2`, `execution_2`, plus the expectation slip.
-3. **Process journal entry #1 committed.**
-4. **`instruction_v2.md`** — version two typed up as a text file, exactly as you wrote it by hand. Do not improve it on the way in; if you want to change it, that is what version three is for, and it should be a separate file.
+No slides. No preparation beyond what you already wrote. Talk from the one-page document and the reading note you have in front of you.
 
-> **Monday check.** By 18:00 on Monday 24 August, push `instruction_v2.md` and post a screenshot of Cursor open on your repository. Two minutes. It is how we find the broken installs on Monday instead of at ten past ten on Wednesday.
+**1 · Who you are** *(about a minute)*
+
+Name, which year, and what you actually make. Not your CV — the thing you would show someone to explain what you do.
+
+**2 · Where you are starting from** *(about two minutes)*
+
+From your one-page document. What you think your research interest is, even if it is vague, even if you are certain it will change. It probably will; that is not a problem and saying so out loud is not an admission of anything.
+
+If you already have a proposal from your application, tell us what it claims. If you do not know yet, say that instead — it is a more useful thing for the room to hear than a confident answer you do not believe.
+
+**3 · Your paper** *(about two minutes)*
+
+The one you chose yourself, not Frayling. Three things:
+
+- **What it is** — title, venue, roughly what it did
+- **The one thing you took from it** — a method, a way of framing something, a way of writing
+- **One thing you did not accept** — from section 3 of your reading note, the critical thinking section
+
+That last one is the part I care about. **A summary tells me you read it; a disagreement tells me you were reading it as a researcher.** It does not need to be devastating. "The claim rests on eight participants and it is presented as though it were general" is a real critique, and it takes one sentence.
+
+> **If you did not finish the reading note, come anyway and speak anyway.** Say what you read and what you made of it. An honest two minutes is worth more to me than a missing slot, and I would rather know now than find out in October.
+
+**While others are speaking, listen for one thing:** whose research is adjacent to yours. You will be reviewing each other's drafts in session 12 and the pairings work far better when they are not random.
 
 ---
 
-## In class
+## Part two — the tool
 
-| Time | | |
-|---|---|---|
-| **10:00** | Homework check, and where we left off | 15 min |
-| **10:15** | **How the machine reads you** — context engineering, and why you are the orchestrator | 15 min |
-| **10:30** | **Worked example** — one instruction taken from text to tool, live, with the room calling the decisions | 20 min |
-| 10:50 | break | 10 min |
-| **11:00** | **Your underspecification audit** | 25 min |
-| **11:25** | **Build the tool** | 45 min |
-| 12:10 | break | 10 min |
-| **12:20** | **Interrogate the space** | 25 min |
-| **12:45** | **Choose, label, commit** | 15 min |
+### First: everyone gets set up
 
-### 1 · How the machine reads you
+**`course/guides/getting_the_course_repo.md`.** Read it now if you have not.
 
-Before you touch Cursor. Fifteen minutes on what is actually happening when you type into an agent: what a context window is, why the context documents you load are not decoration, why the same request produces different results in a clean session and a long one, and what "context engineering" means as a working practice rather than a phrase.
+You are adding this repository to your own as a second source, so course files and your work live in one folder. You are **not** cloning it into a subfolder — that nests one repository inside another and breaks both.
 
-The single idea to carry out of it: **you are the orchestrator.** The work follows your artistic decisions. The agent executes them, quickly and literally, and it has no taste. Everything in the rest of this session depends on your believing that.
+Paste this into Cursor and let the agent do it:
 
-Plus three works, one sentence each, so you know the thing you are about to build has a lineage running back sixty years. The full account of generative art as a field comes in session 3.
+```
+Add the ARTD8105 course repository as a second remote called `course` and
+pull it in, so the course files sit alongside my own work in this same
+repository:
 
-### 2 · The worked example
+    https://github.com/AtticusSims/ARTD8105.git
+
+Our histories are unrelated, so the pull needs --allow-unrelated-histories.
+Do not clone it into a subfolder.
+
+Commit anything I have outstanding first. Show me each command before you
+run it and say what it does. If something fails, stop and explain the error.
+```
+
+The guide covers every way this goes wrong, including the case where you have no repository yet and the case where git is broken entirely. **Do not sit quietly with a red error message.** Ask the agent, then ask me.
+
+> **New this week?** Section *Path C* of that guide is written for you, and it ends with the ten-minute version of the exercise everyone else did last Wednesday. Do that part first — the rest of today needs an instruction to work on.
+
+### Then: the worked example
 
 We take **one** instruction and drive it all the way through together, on the projector — read it back, find every phrase that could be executed more than one way, name the decision hiding inside each one, give it a range, and watch the tool appear.
 
-You call the decisions. I will not resolve a single ambiguity for you; that is the whole demonstration.
+**You call the decisions. I will not resolve a single ambiguity for you**, and when the agent tries to, we stop and look at it. That is the whole demonstration.
 
-This is the same questioning we did at the wall last week — *what effect did this phrase have on what came back?* — but slowed down and written into a file. Watch it once here and your own audit takes half as long.
+This is the same questioning we did at the wall last week — *what effect did this phrase have on what came back?* — slowed down and written into a file.
 
-### 3 · Your underspecification audit
+There is a finished one in `course/examples/02_branching_lines.html`. Open it, move the sliders, and read the code afterwards: every parameter is commented with the phrase in the instruction it came from. That is what yours should look like.
 
-Now you do it. You ask the agent to read your instruction and find every phrase that could be executed more than one way. It quotes each one back and says what decision is hiding inside it.
+### Then: your own audit, started
 
-**It is not allowed to resolve them.** That is your job. For each one you decide: what is the parameter, what is its range, what is its default. This goes in `parameters.md`.
+The agent reads your instruction and finds every phrase that could be executed more than one way. It quotes each one back and names the decision hiding inside it.
+
+**It is not allowed to resolve them.** That is your job. For each one you decide: what is the parameter, what is its range, what is its default. This goes in `my_work/parameters.md`.
 
 Expect between five and twelve. Fewer than four means your instruction is a recipe rather than a protocol, and you should loosen it.
 
 If the agent offers to pick a value "because it looks better", say no. If it does it anyway, that is worth a journal entry — it is the first time this term you will catch a tool exceeding its brief, and it will not be the last.
 
-### 4 · Build the tool
+**Get as far as `parameters.md` in class if you can.** The build is this week's work.
 
-You direct the agent to build **a single HTML file** containing:
+---
 
-- a labelled control for every parameter you named
+## The one idea to leave with
+
+You did not stop being the author when the machine started typing.
+
+**You are the orchestrator.** The work follows your artistic decisions. The agent executes them, quickly and literally, and it has no taste, no eyes, and no stake in whether the result is any good. It will produce something plausible for any instruction you give it, including a bad one, and it will never tell you that you asked for the wrong thing.
+
+Everything else this term depends on your believing that. The agent is under written instruction — in `.cursor/rules/00-course.mdc`, which you can read — to refuse when you ask it to choose for you. When it declines, that is not the tool malfunctioning. **That is the part of the work that is yours.**
+
+---
+
+## This week — finishing the tool
+
+This is the real homework and it is due Friday. Work in Cursor, ask the agent, and read what it produces.
+
+### 1 · Finish `parameters.md`
+
+Every ambiguity you found, as a row:
+
+| Parameter | From which phrase | Range | Default | Why this range |
+|---|---|---|---|---|
+
+**The last column is yours, in your words.** If you cannot say why a range is what it is, you have not actually made that decision yet — and that is worth noticing rather than papering over.
+
+Write this one **in your own language first, with an English line under it.** It leaves the room: it is where the wall label comes from.
+
+### 2 · Build the tool
+
+Ask the agent for **a single HTML file** — `my_work/tools/tool.html` — containing:
+
+- a labelled control for every parameter in `parameters.md`, showing its current value
 - a live SVG drawing that updates as you move them
-- a **seed** control — same seed, same drawing
-- a **Download SVG** button
-- the page fixed at ISO portrait, so the same file prints correctly at A2 or A4
+- a **seed** control — same seed, same drawing, every time
+- a **Download SVG** button that produces a real `.svg` file
+- your instruction text visible in the interface
+- the page fixed at **ISO portrait**, so one file prints correctly at both A2 and A4
 
 No frameworks, no installation, no build step. One file you open by double-clicking.
 
-**You are not learning to write JavaScript today.** You are learning to specify precisely enough that somebody else can write it. That somebody happens to be a machine.
+A prompt that works:
 
-### 5 · Interrogate the space
+```
+Read my_work/instruction.md and my_work/parameters.md.
 
-Now use the thing you built. Find and record, with a screenshot and the parameter values for each:
+Build my_work/tools/tool.html — one self-contained HTML file, no frameworks,
+no CDN, no build step, opens by double-clicking. It needs:
+
+- a labelled slider for every parameter in parameters.md, showing its value
+- a live SVG that redraws as I move them
+- a seed control using a small deterministic PRNG — same seed, same drawing
+- a Download SVG button producing a real .svg file
+- my instruction text visible on the page
+- ISO portrait page: viewBox plus width/height in millimetres at A2, so the
+  download prints at true size. Keep the drawing inside a 10mm margin and
+  clip it to the page.
+
+Plain readable JavaScript, real variable names. Comment the line that
+implements each parameter with the phrase from my instruction it came from.
+
+When it runs, explain in plain language what each part does.
+```
+
+**You are not learning to write JavaScript this week.** You are learning to specify precisely enough that somebody else can write it. That somebody happens to be a machine.
+
+### 3 · Interrogate the space
+
+Use the thing you built. Find and record — **screenshot plus the parameter values** for each:
 
 - the **boring region** — where moving the sliders changes nothing you care about
 - the **surprising region** — where it stopped resembling what you imagined but is still a legitimate execution
@@ -98,23 +176,25 @@ Now use the thing you built. Find and record, with a screenshot and the paramete
 
 You met all three last week with a pencil, at ten minutes per execution. You can now sweep them in about four seconds. **That change of speed is the actual subject of this session** — not the software.
 
-> **One of the three you must find by editing the code, not by moving a slider.** Open the file, find the line that implements one of your parameters, predict out loud what will happen if you change it, then change it. If your prediction was wrong, that is the more useful outcome — write it in the journal.
+> **One of the three you must find by editing the code, not by moving a slider.** Open the file, find the line that implements one of your parameters, say out loud what you think will happen if you change it, then change it yourself. If your prediction was wrong, that is the more useful outcome — write it in the journal.
 >
-> You are never assessed on having typed code. You are assessed on being able to read it, explain it and change it, and that is a different skill which does not arrive by itself.
+> You are never assessed on having typed code. You are assessed on being able to read it, explain it and change it, and that is a different skill which does not arrive by itself. You will be asked, in person, without warning.
 
 Then the question that matters:
 
 > Your instruction said one thing. This space contains all of it. Which region did you actually mean — and is that a smaller space than the one you wrote?
 
-### 6 · Choose, label, commit
+### 4 · Export, label, commit
 
-Export your drawings, write the labels, commit everything.
+Three drawings, the labels, and everything else committed and pushed.
+
+> **Stuck on Thursday? Email me Thursday.** Not Friday afternoon. A broken build at 16:00 on Friday is a missed exhibition; a broken build on Thursday evening is a ten-minute reply.
 
 ---
 
 ## The pop-up exhibition
 
-**Expected 1–10 September; dates to be confirmed.** Your prints come out of today, which makes this week's deadline real.
+**Expected 1–10 September; dates to be confirmed.** Your prints come out of this week, which is what makes Friday real.
 
 ### What you show — three prints
 
@@ -137,7 +217,7 @@ That is the whole reason for showing three rather than one. A single drawing is 
 
 ### The label
 
-Same format on all three sheets:
+Same format on all three sheets, in your own language with English under it:
 
 ```
 [Title]
@@ -150,7 +230,7 @@ The label is not decoration. It carries everything another person would need to 
 
 ### Deadline
 
-**All three files plus label text committed by 18:00 Friday 28 August.** Printing happens Monday 31 August. Late means not in the show.
+**All three files plus label text committed and pushed by 18:00 Friday 28 August.** Printing happens Monday 31 August. Late means not in the show.
 
 ---
 
@@ -174,11 +254,13 @@ Both count toward the show. Talk to me before you commit to either.
 | `instruction_v2.md` · `execution_2.jpg` | The revision and its execution |
 | `instruction_v3.md` | Only if you made a final revision, with one sentence on what changed |
 | `parameters.md` | Every ambiguity, its parameter, its range, your chosen default, and why |
-| `tool.html` | The generator |
+| `tools/tool.html` | The generator |
 | `prints/` | Three SVGs — one A2, two A4 — plus `labels.txt` |
 | Journal entry #2 | The three regions, with parameter values, and which one you found by editing code |
 
 Formative, not graded — but collected, and it is the first item in your annotated portfolio.
+
+> **You may revise your instruction once more before you build.** You saw at the wall where yours was still loose or still too tight. If you want a final revision, make it — save it as `instruction_v3.md`, keep version two, and write one sentence saying what you changed and why. This is optional. If version two is what you want to build from, build from version two. **Never overwrite an earlier version:** the sequence v1 → execution → v2 → execution → v3 is evidence, and it is the thing that makes your process legible in November.
 
 ---
 
@@ -190,4 +272,4 @@ Three things happen at once here, and it is worth knowing that while you do it.
 
 **You learn to direct rather than operate.** You did not write the tool. You specified it precisely enough that it could be written, then you judged the result and sent it back. That is the working method for the whole term.
 
-**And you learn that software can be disposable.** The thing you built today exists to make one series of drawings and will never be used again by anyone. Ten years ago that would have been an absurd use of a fortnight of engineering. That it is now an afternoon is the actual content of "Software 3.0" — not that the machine writes code, but that it becomes reasonable to build a tool for a single question.
+**And you learn that software can be disposable.** The thing you built this week exists to make one series of drawings and will never be used again by anyone. Ten years ago that would have been an absurd use of a fortnight of engineering. That it is now an afternoon is the actual content of "Software 3.0" — not that the machine writes code, but that it becomes reasonable to build a tool for a single question.

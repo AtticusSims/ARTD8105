@@ -33,7 +33,7 @@ This produces three things at once:
 **At the start of every Cursor session**, paste this. It is the whole protocol from the student's side.
 
 ```
-@research_agent.md @03_Provenance_Logging_Spec.md
+@context/provenance_logging_spec.md
 
 Start a logging session. Create today's session file in _research_log/sessions/
 and log every substantive exchange per the spec, including disposition records
@@ -338,7 +338,7 @@ The point is not policing. It is that a log with known, stated gaps is usable ev
 
 ## Submission and collection
 
-**The research log is a graded deliverable.** It is assessed under AI Process Literacy — Provenance (D1), Curation (D2) and Reasoning with prompts (D3) in `04_Assessment_Rubric.md`.
+**The research log is a graded deliverable.** It is assessed under AI Process Literacy — Provenance (D1), Curation (D2) and Reasoning with prompts (D3) in `context/assessment_rubric.md`.
 
 **What students submit, session 14 — 25 November:**
 
@@ -348,9 +348,9 @@ The point is not policing. It is that a log with known, stated gaps is usable ev
 
 That last item matters more than it looks. A student who writes *"I stopped logging properly in weeks 9–10 while I was chasing a print failure, and reconstructed four entries afterwards"* has produced a more usable record than one claiming unbroken coverage. **Say so in class in session 1** — otherwise students will optimise for the appearance of completeness.
 
-**The instructor collects at the end of term** by cloning all repositories (see `06_Git_and_GitHub_Setup.md`). No submission step can be missed, because the material is already pushed. Weekly clones during term give an independent snapshot that does not depend on anyone remembering to submit.
+**The instructor collects at the end of term** by cloning all repositories (see `course/guides/git_and_github_setup.md`). No submission step can be missed, because the material is already pushed. Weekly clones during term give an independent snapshot that does not depend on anyone remembering to submit.
 
-**Research use is separate.** The log is collected and graded as coursework. Whether any of it is analysed for research is asked afterward, once grades are final — see `05_Ethics_Amendment_Brief.md`.
+**Research use is separate.** The log is collected and graded as coursework. Whether any of it is analysed for research is asked afterward, once grades are final. The ethics brief governing that is instructor-facing and is not in this repository.
 
 ---
 

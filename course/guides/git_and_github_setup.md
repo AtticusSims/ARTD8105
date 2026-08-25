@@ -90,7 +90,7 @@ git commit -m "S5: literature verification, three questions killed"
 git push
 ```
 
-The agent will run these for you if you ask. From `research_agent.md` §0 and the logging spec, it should be doing this at each step boundary — but check that it is, and run it yourself when it does not.
+The agent will run these for you if you ask. The standing rules in `.cursor/rules/` tell it to do this at each step boundary — but check that it is, and run it yourself when it does not.
 
 **Commit message format:**
 

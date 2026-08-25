@@ -34,3 +34,6 @@ desktop.ini
 node_modules/
 .venv/
 __pycache__/
+
+# FUSE mount artefacts (created when files are edited through the desktop bridge)
+.fuse_hidden*
