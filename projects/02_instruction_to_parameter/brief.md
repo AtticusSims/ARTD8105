@@ -54,5 +54,5 @@ Printing Monday 31 August. Late means not in the show.
 
 ## Also this week
 
-- One reading note
-- One additional reading
+- **One reading note** — a paper of your own choosing
+- **Read Galanter, "What Is Generative Art?"** (2003, 15 pp) — <https://philipgalanter.com/downloads/ga2003_paper.pdf>. We discuss it in session 3.
