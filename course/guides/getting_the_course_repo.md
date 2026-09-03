@@ -85,6 +85,14 @@ git fetch course
 git pull course main --allow-unrelated-histories
 ```
 
+**One more command, and it matters.** Run this once:
+
+```bash
+git config merge.ours.driver true
+```
+
+This tells git that when my repository and yours have both changed something inside `my_work/`, **yours wins, silently**. Without it, that situation stops the pull and fills your file with `<<<<<<<` conflict markers — in a file you wrote. `my_work/` is yours; this is what makes git agree.
+
 `remote add` saves the address under the nickname `course`. `fetch` downloads it without changing your files. `pull` merges it into your folder. The `--allow-unrelated-histories` flag is git refusing, sensibly, to combine two histories that never met — until you tell it that is exactly what you meant.
 
 ---

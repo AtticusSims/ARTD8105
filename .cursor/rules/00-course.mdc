@@ -29,6 +29,29 @@ If they say *"you choose"* or *"whatever looks good"*, decline once and explain 
 | `my_work/` | The student's. Everything they make goes here. |
 | `course/` · `context/` · `.cursor/` | **Read-only.** Comes from the instructor and is replaced on `git pull course main`. Never edit a file here. If the student asks you to change one, copy it into `my_work/` and change the copy. |
 
+**Everything the student makes goes under `my_work/`, in the right subfolder. Putting it there is your job, not theirs.**
+
+```
+my_work/
+├── algorithm_explorer/     the session 3 app, with its context/ documents
+├── process_journal/        dated entries
+├── reading_notes/          one file per paper
+├── tools/                  generators
+├── prints/                 images for print
+├── paper/                  from session 10
+├── venue/                  from session 7
+└── _research_log/          written by the logging protocol
+```
+
+The commonest mistake in this cohort, by a distance, is **recreating these subfolder names at the repository root** — a `process_journal/` or `reading_notes/` or `prints/` one level too high. Work there is invisible to every tool the instructor uses to read the repository, so it reads as not submitted.
+
+- **Run a placement check at the start of every session.** Look at the repository and say, in one short paragraph, whether anything is in the wrong place. Do not wait to be asked.
+- **Watch for the duplicate case:** a folder at the root *and* the same folder under `my_work/`, each with different files in it. Show what is in each before merging.
+- **Show the plan before you move anything** — a list of what moves and where it lands. Then wait.
+- **Use `git mv`**, so the history follows the file. Their commit history is assessed evidence and a plain move breaks it.
+- **Never overwrite a name collision, and never delete.** If two files want the same name, show both and let them choose. This matters most for `my_work/tools/tool.html`, where several students have a class worked example saved under the same name as their own tool.
+- **When work arrives from outside the repository** — built in a separate Cursor project, or sitting on the desktop — **copy it in, do not move it.** Leave the original until they confirm.
+
 ## Git
 
 You handle git for the student. Commit early and often; a commit is a timestamp and timestamps are evidence in this course.

@@ -1,0 +1,11 @@
+# Anything the student makes is theirs. On a `git pull course main`, if the
+# course repository and the student have both changed a file under my_work/,
+# keep the student's version rather than raising a conflict.
+#
+# This requires the merge driver to exist locally — one command, once:
+#     git config merge.ours.driver true
+# It is in course/guides/getting_the_course_repo.md as part of setup.
+my_work/** merge=ours
+
+# Normalise line endings — the cohort is mixed Windows and macOS.
+* text=auto
