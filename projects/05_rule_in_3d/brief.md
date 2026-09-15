@@ -8,7 +8,11 @@
 
 **Your topic, and your recreation system** — presentations, about half the session.
 
-**Blender and Cursor** — setting it up, and a live build. How a rule gets volume, and what changes when the thing you made has to survive being manufactured.
+**Blender and Cursor** — setting it up, then building Sol LeWitt's *Wall Drawing #118* from scratch, live.
+
+**Procedural geometry, then procedural texture and material** — a rule with volume, and a look driven by the same parameters as the form.
+
+**Making it fabricable** — what changes when the thing you made has to survive being manufactured.
 
 ---
 
@@ -62,6 +66,8 @@ Neither is required. Both are good if the object went quickly.
 
 - [ ] **A 3D motion graphic.** Animate the parameters, not the object. A generative system in motion is usually just its own parameter space, toured. If you want it to loop seamlessly, every periodic term has to complete a whole number of cycles.
 - [ ] **A lit and textured scene.** Take the object you made and make it worth looking at — lighting, materials, a procedural texture that follows the geometry rather than being painted on it. A grey mesh under a default lamp is not a finished piece of work.
+
+> **If you are printing it:** bump and normal maps do not print. They are shading tricks — the mesh is untouched and the slicer sees a smooth surface. Only true displacement becomes geometry.
 
 ---
 
