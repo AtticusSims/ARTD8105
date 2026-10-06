@@ -27,7 +27,7 @@ Run it once per candidate venue. It takes about three hours the first time and f
 
 A file at `venue/<venue-slug>.md` — for example `venue/eva-london-2027.md`. The agent reads it and reasons from it explicitly. Without it, the agent is guessing from averaged impressions of academic norms that are dated and skewed toward large computer-science conferences. With it, the agent's judgements are accountable to something you can check.
 
-You will build two or three of these in Step 4, then one becomes primary in Step 6.
+You will build two or three of these in Step 5, then one becomes primary in Step 6.
 
 ---
 
@@ -230,7 +230,7 @@ None of this makes the exercise pointless. An explicit, checkable, wrong-in-know
 
 ## Log this work
 
-Every phase produces log entries. Use `workbook_step: "S4"` and these `move` values:
+Every phase produces log entries. Use `workbook_step: "S5"` and these `move` values:
 
 | Phase | `move` |
 |---|---|

@@ -38,7 +38,7 @@
 
 ## Formats
 
-**A pictorial and a short paper are different arguments, not the same argument at two lengths.** Choose the format before the venue.
+**A pictorial and a short paper are different arguments, not the same argument at two lengths.** Choose the format after your contribution type, and before the venue.
 
 | Format | Argues with | Typical length | Archival? |
 |---|---|---|---|
@@ -51,6 +51,8 @@
 | **Visual essay** (journal) | An argument made mainly through images | Up to about 12 pages | Yes |
 
 **Look at the pictorial first.** It was created at DIS 2014 for exactly the kind of knowledge visual designers produce. In DIS's words, pictorials are "archival research publications with the same weight as full papers", in which visuals "play a major role in conveying the ideas and contributions" — and they "are meant to contribute to knowledge in their own right, not merely to document already-known concepts, methods, and processes." A portfolio with captions is not a pictorial.
+
+**Artwork tracks are not for this course.** Everyone makes an exhibitable piece and shows it in the Faculty exhibition, whatever the contribution type; what you publish is a paper. Artwork and exhibition tracks — where the object itself is the submission — are listed below because you will meet them in calls, but aim at a paper format.
 
 ---
 

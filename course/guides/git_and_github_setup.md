@@ -86,7 +86,7 @@ That is the whole setup. Everything after this is one command.
 
 ```bash
 git add -A
-git commit -m "S5: literature verification, three questions killed"
+git commit -m "S4: literature check, three questions dropped"
 git push
 ```
 
@@ -102,7 +102,7 @@ Examples that are useful later:
 
 ```
 S3: 8 candidate questions drafted
-S4: eva-london venue file, phase 5 validation FAILED, re-deriving
+S5: eva-london venue file, phase 5 validation FAILED, re-deriving
 S8: third print failed - warping at 0.2 layer height
 S9: intro rewritten after claim v4
 ```

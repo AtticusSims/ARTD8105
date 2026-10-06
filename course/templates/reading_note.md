@@ -71,7 +71,7 @@ venue you are considering. It is where your venue file comes from.*
 **What does this paper's acceptance tell you about what this venue rewards?**
 
 One or two sentences. Over twenty notes this accumulates into a real picture,
-and it is what you will paste into `venue/<slug>.md` in Step 4.
+and it is what you will paste into `venue/<slug>.md` in Step 5.
 
 ## 7 · Take-home
 

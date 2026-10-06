@@ -42,7 +42,7 @@ There is one meta-level outcome of this course beyond the paper and the artifact
 | **`.cursor/rules/`** | How the agent is instructed to behave. Cursor loads these by itself | Read `00-course.mdc` once, so you know what to expect |
 | **`course/guides/getting_the_course_repo.md`** | Putting this repository inside your own, and keeping it updated | Session 2 |
 | **`course/guides/research_workbook.md`** | The eleven steps, with prompts | Work through it |
-| **`course/guides/venue_interrogation_protocol.md`** | How to reconstruct a venue's standards | At Step 4 |
+| **`course/guides/venue_interrogation_protocol.md`** | How to reconstruct a venue's standards | At Step 5 |
 | **`context/provenance_logging_spec.md`** | How your work gets recorded | Skim now, refer later |
 | **`context/assessment_rubric.md`** | How you are marked | Read in session 1 |
 | **`course/guides/git_and_github_setup.md`** | Twenty minutes of setup, then one command | Session 1 homework |

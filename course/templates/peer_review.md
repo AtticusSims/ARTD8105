@@ -196,4 +196,4 @@ vague or unfair.
 
 **You are also validating their venue file.** If you cannot apply their derived
 standard because it is too vague to act on, say so in your review. That is a
-finding about their Step 4 work and it is worth more to them than politeness.
+finding about their Step 5 work and it is worth more to them than politeness.

@@ -4,7 +4,7 @@
 > Your own work goes in `my_work/`. To use a template, copy it there first.
 > *If a pull ever fails with "local changes would be overwritten", you edited something in here.*
 
-**ARTD8105 · v1.1 · 17 August 2026**
+**ARTD8105 · v1.2 · 6 October 2026**
 *From reading to submission-ready manuscript, in eleven steps.*
 
 ---
@@ -28,16 +28,16 @@ Each step carries **💬 USE THE AGENT** blocks: worked starting prompts with `[
 | 1 | `territory_map.md` + first reading notes | Session 3 · 2 Sep |
 | 2 | `position_map.md` | Session 4 · 9 Sep |
 | 3 | `candidate_questions.md` | Session 5 · 16 Sep |
-| 4 | `venue/<slug>.md` × 2–3 | Session 7 · 7 Oct |
-| 5 | `literature_verification.md` | Session 7 · 7 Oct |
-| 6 | `idea_evaluation.md` + contribution type declared | **Session 7 · 7 Oct — assessed** |
-| 7 | `claim.md` | Session 8 · 14 Oct |
+| 4 | `literature_verification.md` | Session 8 · 14 Oct |
+| 5 | `venue/<venue-slug>.md` — a primary and a backup, e.g. `venue/dis-2027.md` | Session 8 · 14 Oct |
+| 6 | `idea_evaluation.md` + contribution type declared | **Session 8 · 14 Oct — assessed** |
+| 7 | `claim.md` | Session 9 · 21 Oct |
 | 8 | process journal, continuous; artifacts | Sessions 8–11 |
 | 9 | `draft_v1.md` + figure plan | Session 11 · 4 Nov |
 | 10 | mock review given and received | **Session 12 · 11 Nov — assessed** |
 | 11 | submission package | **Session 14 · 25 Nov — assessed** |
 
-*Steps are counted in **sessions**, not calendar weeks. The two do not line up: there are 15 Wednesdays in the term and 14 numbered sessions, because 30 September carries a guest lecture rather than a session of this course. Steps 4, 5 and 6 are built during that 30 September week and are all due together on 7 October.*
+*Steps are counted in **sessions**, not calendar weeks. The two do not line up: there are 15 Wednesdays in the term and 14 numbered sessions, because 30 September carries a guest lecture rather than a session of this course. Steps 4, 5 and 6 are started together at session 7 and are all due on 14 October, at session 8.*
 
 ---
 
@@ -148,32 +148,21 @@ have to be cut. Do not rank them yet.
 
 ---
 
-# STEP 4 — Venue interrogation
-**Taught session 6, built in the 30 September week, due session 7 · Output: `venue/<slug>.md` for two or three venues**
+# STEP 4 — Literature check
+**Taught session 7 · due session 8, 14 October · Output: `literature_verification.md`**
 
-Run **`course/guides/venue_interrogation_protocol.md`** in full. Do not shortcut it — this is the step that makes every later critique accountable to something real.
-
-Choose candidates using the **Publication Venue Briefing** in the course materials. Pick venues that differ from each other: one accessible, one ambitious, one adjacent to your specific method.
-
-Do Phase 5 — validate your derivation against a held-out exemplar. If your derived rubric rejects a paper the venue accepted, your derivation is wrong.
-
-**Output check:** two or three venue files, each with a completed validation section.
-
----
-
-# STEP 5 — Literature verification sprint
-**Built in the 30 September week, due session 7 · Output: `literature_verification.md`**
-
-For your two or three strongest questions, establish what is genuinely known.
+Before you declare what your project contributes, establish what is already known. The gap you find is what tells you which contribution type is open (Step 6). If you are torn between two or three questions, check each — this is how you choose between them.
 
 For each question, produce:
 - **What is already established** — with verified citations
 - **What has been tried and failed** — often the most useful and hardest to find
-- **The gap**, stated in one sentence
 - **The five works your paper will have to engage**, with a critique of each
-- **A verdict**: green / amber / red
+- **The gap**, stated in one sentence
+- **What you changed** in the project because of what you found
 
-**Red means the question is already answered.** That is a good outcome for this step, not a bad one — you found out in session 7 rather than session 14.
+**Finding that your question is already answered is a good outcome for this step, not a bad one** — you found out in session 7 rather than session 14. Narrow or shift the question with the agent, and check again.
+
+Run the search in an AI research tool — Claude or ChatGPT in research mode if you have access, Gemini Deep Research if not — then work through what it found with the agent. The prompt template is in `projects/07_project_to_venue/gemini_deep_research.md`.
 
 ### 💬 USE THE AGENT
 
@@ -181,8 +170,8 @@ For each question, produce:
 Question: [paste].
 Search for prior work that answers or partly answers this. Be adversarial —
 your job is to find the paper that makes my question redundant, not to
-reassure me. Report what you find with VERIFIED tags and give me a
-green/amber/red verdict with reasoning.
+reassure me. Report what you find with VERIFIED tags, and tell me plainly
+where the gap is — or that there is none.
 ```
 
 ```
@@ -190,24 +179,43 @@ For these five works [list], write one critique each: what does it do, what
 does it not do, and what would my project add? Not a summary — a critique.
 ```
 
+```
+Talk me through what this means for my project: what has already been done,
+where the gap is, and what I should change. Ask me questions — the decision
+is mine.
+```
+
 > **Verify every citation yourself before it enters this file.** Open the DOI. Check the title, authors, year and venue. Two of the three "required readings" in this course's own accreditation document do not exist — that is what unverified citations look like when they survive into an official document.
 
-**Output check:** a verdict per question, and at least one question you killed.
+**Output check:** the gap in one sentence, the works it rests on — every one opened — and at least one question you dropped or narrowed.
+
+---
+
+# STEP 5 — Venue interrogation
+**Taught session 7 · due session 8, 14 October · Output: `venue/<venue-slug>.md` — one file per venue, named after it, for example `venue/dis-2027.md`**
+
+The venue comes last. Start from the gap you found in Step 4, the contribution type it points to and the format that suits that type — you declare the type formally in Step 6. Then run **`course/guides/venue_interrogation_protocol.md`**. Do not shortcut it — this is the step that makes every later critique accountable to something real.
+
+Choose candidates using the **Publication Venue Briefing** in the course materials. Pick venues that differ from each other: one accessible, one ambitious, one adjacent to your specific method.
+
+For 14 October: Phases 1–2 of the protocol for your primary venue, and Phase 1 for a backup. The rest follows by session 10, including Phase 5 — validate your derivation against a held-out exemplar. If your derived rubric rejects a paper the venue accepted, your derivation is wrong.
+
+**Output check:** a primary and a backup venue file; by session 10, the primary with a completed validation section.
 
 ---
 
 # STEP 6 — Commit and declare
-**Due session 7 · 7 October · Output: `idea_evaluation.md` — ASSESSED**
+**Due session 8 · 14 October · Output: `idea_evaluation.md` — ASSESSED, and defended in class**
 
-Pick one question. Complete `course/templates/idea_evaluation.md`.
+Pick one question. Complete `course/templates/idea_evaluation.md` — for 14 October, sections 1–5 and 7; the rest by session 10.
 
 This template is adapted from Wu Ziwei's Idea Evaluation Template and covers: the narrowed problem, whether it is new or old, your method and its novelty, your three contributions, related work with critiques, expected results, discussion, a full figure list, and remaining tasks with milestones.
 
 Two additions specific to this course:
 
-**Declare your contribution type** — existence proof, method contribution, annotated portfolio, intermediate concept, critical/speculative, or empirical. The type determines what evidence you need. Contribution types are taught in session 6 and defined in `context/glossary.md`. If you choose **empirical**, you need ethics approval and you need to start it now.
+**Declare your contribution type** — existence proof, method contribution, annotated portfolio, intermediate concept, critical/speculative, or empirical. Name it from the gap you found in Step 4. The type determines what evidence you need. Contribution types are taught in session 7 and defined in `context/glossary.md`. If you choose **empirical**, you need ethics approval and you need to start it now.
 
-**Record your venue constraints** — word limit, format, anonymisation, deadline, from your Step 4 file. These constrain everything downstream; a 2,500-word short paper and a 12-page pictorial are different arguments, not the same argument at different lengths.
+**Record your venue constraints** — word limit, format, anonymisation, deadline, from your Step 5 file. These constrain everything downstream; a 2,500-word short paper and a 12-page pictorial are different arguments, not the same argument at different lengths.
 
 ### The necessity test
 
@@ -225,7 +233,7 @@ Both must fail for the project to be coherent. Tell me which one is weak.
 ---
 
 # STEP 7 — Claim construction
-**Session 8 · Output: `claim.md`**
+**Session 9 · Output: `claim.md`**
 
 Write these four sentences. Expect the first attempt to be bad.
 

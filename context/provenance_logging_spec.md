@@ -102,7 +102,7 @@ A turn is "substantive" if the agent produced anything the student could act on.
   "ts": "2026-09-03T10:14:22+08:00",
   "session": "2026-09-03_1014",
   "turn": 7,
-  "workbook_step": "S5",
+  "workbook_step": "S4",
   "move": "verify",
   "student_intent": "check whether the reaction-diffusion claim in my draft is supported",
   "agent_output_kind": "citation_set",
