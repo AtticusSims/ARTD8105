@@ -20,7 +20,7 @@ ethics_required: false
 # Idea Evaluation
 
 *Adapted from Wu Ziwei's Idea Evaluation Template, extended for this course.
-Revise it — do not rewrite it from scratch — at sessions 7, 10 and 12. Keep every
+Revise it — do not rewrite it from scratch — at sessions 8, 10 and 12. Keep every
 version. The drift is data.*
 
 ---
@@ -160,13 +160,13 @@ missing while there is still time to make it.
 - **Workload** — coding, fabrication, capture, writing, any study:
 - **Milestones**, against the course calendar:
 
-| Week | Milestone |
+| Session | Milestone |
 |---|---|
-| 8 | |
-| 10 | |
-| 12 | |
-| 13 | |
-| 15 | |
+| 9 · 21 Oct | |
+| 10 · 28 Oct — idea evaluation revised | |
+| 11 · 4 Nov — draft v1 | |
+| 12 · 11 Nov — mock review; idea evaluation revised | |
+| 14 · 25 Nov — submission package | |
 
 ---
 
