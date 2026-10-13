@@ -4,6 +4,14 @@ What changed, and when. Run `git pull course main` to get it.
 
 ---
 
+## 2026-10-13 — session 8
+
+- Added the idea-presentation review app at `projects/08_idea_defence/review.html`. Save a review, start the next, and reopen previous entries to edit them.
+- Save the review file in `my_work/peer_reviews/`, then commit and push it to your own repository for the work to count.
+- Added the session 8 brief for the objects, generating systems and idea defences.
+
+---
+
 ## 2026-08-26 — session 2
 
 - **New `projects/`** — one folder per session, holding that session's brief and the agent file you load. Session briefs and homework moved here out of `course/sessions/`.
