@@ -207,7 +207,7 @@ Your submission must state the tool, the version, the date, and the task. *"We u
 
 *Set up in session 2.*
 
-You keep a running record of your work with the agent — what you asked, what it produced, what you did with it. You do not write it by hand: you start each session with a short instruction and the agent writes the entries while you work. You review a summary once a week and correct anything wrong.
+You keep a running record of your work with the agent — what you asked, what it produced, what you did with it. You do not write it by hand: the repository's standing instructions tell the agent to start logging automatically and write entries while you work. You review a summary once a week and correct anything wrong. Earlier catch-up records must be marked as reconstructed.
 
 - **4** — You can point to any part of your work and say whether it was AI-assisted and how, backed by a record written at the time and matched by your saved version history.
 - **3** — Record kept through the term with weekly reviews; you can account for all the major pieces of work.

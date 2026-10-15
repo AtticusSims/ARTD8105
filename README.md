@@ -56,8 +56,14 @@ git push                 # send your work to your own repository
 | `course/` | Guides and templates. **Read only.** |
 | `context/` | Reference the agent reads — rubric, logging spec, glossary. **Read only.** |
 | `.cursor/rules/` | Standing rules. Cursor loads these by itself. **Read only.** |
+| `AGENTS.md` | Automatic logging and agent instructions for this repository. **Read only.** |
 
 **Start with `course/guides/00_start_here.md`.** If you are setting up, or you joined after session 1, go to `course/guides/getting_the_course_repo.md` first.
+
+**Research logging starts automatically** while the agent works in your
+repository. Logs go in `my_work/_research_log/`. Review the weekly summary and
+commit and push your work for it to count. To recover earlier unlogged chats,
+follow `course/guides/catch_up_research_logs.md` in each original Cursor chat.
 
 ### ⛔ Do not edit anything outside `my_work/`
 

@@ -4,6 +4,18 @@ What changed, and when. Run `git pull course main` to get it.
 
 ---
 
+## 2026-10-15 — automatic research logging
+
+- Added root `AGENTS.md` and made the Cursor logging rule always apply. The agent
+  now starts or resumes logging without a separate student prompt.
+- Standardised new logs under `my_work/_research_log/`, with read-back checks,
+  separate chat/session files and honest handling of missing context.
+- Added a catch-up prompt for each old Cursor chat. Reconstructed records carry
+  their actual recording time and source; existing records and student sign-offs
+  are preserved.
+
+---
+
 ## 2026-10-13 — session 8
 
 - Added the idea-presentation review app at `projects/08_idea_defence/review.html`. Save a review, start the next, and reopen previous entries to edit them.

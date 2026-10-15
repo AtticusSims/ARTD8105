@@ -1,20 +1,54 @@
 ---
-description: How to keep the provenance research log — load when the student starts a logging session, writes reading notes, or works on the paper
+description: Automatically keep the provenance log during every student working session
 globs:
-alwaysApply: false
+alwaysApply: true
 ---
 
 # Research log
 
-Full specification: `context/provenance_logging_spec.md`. Read it before writing any log entry.
+Logging is part of doing the student's work, not a separate task they must request.
+For instructor maintenance of the shared class repository, do not create student
+coursework logs. Read `context/provenance_logging_spec.md` before the first entry.
 
-The short version:
+## At the start of a working session
 
-- The log lives in `my_work/_research_log/`. One session file per working session.
-- One entry per **substantive** exchange — not per message. Routine back-and-forth is not an entry.
-- Four record types: `exchange`, `disposition`, `decision`, `correction`.
-- **A disposition record whenever the student turns down something you proposed.** These are the highest-value entries in the log and the ones that are hardest to reconstruct later. Write them at the moment.
-- Weekly summary and sign-off at the end of each week.
-- Commit the log. Git commits are the independent timestamp.
+- Inspect `my_work/_research_log/` and any legacy root `_research_log/`. Read legacy
+  records for continuity; do not move, overwrite or duplicate them automatically.
+- Create the canonical folders if needed. Start a new session file under
+  `my_work/_research_log/sessions/` using the actual current Macau date and time.
+  Add a unique suffix when necessary. Resume a file only when it belongs to this
+  same chat and working session. Separate chats must not share a session file.
+- Continue the existing turn sequence when resuming. Use the stated workbook step;
+  if it is unknown, use `NA`. Logging must not wait for a step number.
 
-The log is a graded coursework artefact. It exists because asking a student in November to recall a specific rejection in September produces a smoothed, flattering and wrong answer.
+## On every substantive turn
+
+1. Record the visible disposition of the previous output: accepted, modified,
+   rejected, deferred, redirected or unknown. State the evidence for an inference;
+   never treat silence as acceptance. Leave unresolved dispositions pending until
+   they can be recorded honestly.
+2. Append an `exchange` record for this turn before the final response: the actual
+   timestamp with `+08:00`, session ID, turn, step, move, intent, output kind,
+   artefacts and any citation checks or flags. Log actionable advice as well as
+   file changes; omit greetings and routine file-loading confirmations.
+3. For a substantive rejection or modification, also create a sequential decision
+   file in `decisions/`. Inspect existing numbers first. Do not manufacture a
+   decision or the student's reason to satisfy a quota.
+4. Read back the appended record and check that it is valid JSON. Do not claim the
+   log was saved when the write failed. Explain any file-access problem plainly.
+
+Existing records are append-only. Correct mistakes with new correction records.
+Catch-up entries require `reconstructed: true`, the `reconstructed` flag, current
+recording timestamps and identifiable source evidence. Follow
+`course/guides/catch_up_research_logs.md`; never silently backdate a record.
+
+## Checkpoints
+
+- On `LOG CHECK`, report the session path, exchange count, pending dispositions,
+  reconstructed entries and known gaps from the files on disk.
+- At a natural session/step checkpoint, inspect the diff and commit the relevant
+  work and log with a `[log:<session>]` tag. Preserve unrelated changes. Push only
+  when the student requests it, to their own remote.
+- When a weekly summary is due, prepare it and update the integrity report from
+  the actual records. Leave student review/sign-off for the student; never tick it
+  or invent it. Record known gaps rather than claiming complete coverage.

@@ -67,7 +67,11 @@ If a commit looks large, say so and name the file before pushing. GitHub rejects
 
 ## Research log
 
-From session 3 the student keeps a provenance log — see `context/provenance_logging_spec.md`. When they ask you to start a logging session, follow that spec exactly.
+Keep the provenance log automatically during every student working session. Do
+not wait for a start-logging request. Follow `.cursor/rules/10-research-log.mdc`
+and `context/provenance_logging_spec.md`, saving records in
+`my_work/_research_log/`. Mark late reconstruction explicitly. Instructor
+maintenance of the shared class repository is not a student coursework session.
 
 ## What to push back on
 

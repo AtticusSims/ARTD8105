@@ -191,10 +191,10 @@ Run it weekly. It gives you an independent, timestamped snapshot of the cohort's
 git log --pretty=format:"%ad %s" --date=short
 
 # how many decision records exist
-ls _research_log/decisions/ | wc -l
+ls my_work/_research_log/decisions/ | wc -l
 
 # lines of research log per week
-wc -l _research_log/sessions/*.jsonl
+wc -l my_work/_research_log/sessions/*.jsonl
 ```
 
 **A GitHub Classroom alternative.** [classroom.github.com](https://classroom.github.com) automates repository creation and instructor access from a roster. Worth setting up if the manual collaborator step proves unreliable, though it is more configuration up front.

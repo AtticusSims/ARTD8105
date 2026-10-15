@@ -4,7 +4,7 @@
 > Your own work goes in `my_work/`. To use a template, copy it there first.
 > *If a pull ever fails with "local changes would be overwritten", you edited something in here.*
 
-**ARTD8105 · v1.0 · 16 August 2026**
+**ARTD8105 · v1.1 · 15 October 2026**
 *How the agent records the work, so that students do not have to reconstruct it later.*
 
 ---
@@ -15,9 +15,9 @@ In the previous cohort, students were asked at the end of term to *"give one spe
 
 That was not a student failure. It was an instrument failure. Asking someone in May to recall a specific rejection in March asks them to reconstruct something they never recorded — and the reconstruction will be smoothed, flattering, and wrong.
 
-**So the recording happens at the moment, as a side effect of doing the work.** The student does not compose log entries by hand. The agent writes them, following this specification, because the student instructs it to at the start of each session.
+**So the recording happens at the moment, as a side effect of doing the work.** The student does not compose log entries by hand. Root `AGENTS.md` and the always-applied Cursor rule `.cursor/rules/10-research-log.mdc` instruct the agent to start logging automatically, without a separate student request.
 
-**This is a student-instructed protocol, not a fully automated one.** That distinction is deliberate and it is what makes it workable. Nothing in Cursor guarantees that an agent will maintain a standing instruction across a twelve-week term — agents drift, sessions restart, context windows fill. Rather than pretend otherwise, the design puts one short, explicit instruction at the start of every session and one review at the end of every week. The student owns the ritual; the agent does the writing.
+**Automatic by default, checked on disk.** Rules instruct an agent; they are not a background recorder of every Cursor conversation. The agent must create or resume the session file, append each substantive exchange and verify the write. If tools or context are unavailable, it reports the gap. The student still checks the weekly summary and pushes the work.
 
 **The log is submitted as part of the assessment.** It is a graded coursework artifact, collected at the end of term. That is what gives it weight and it is why the ritual holds.
 
@@ -28,17 +28,11 @@ This produces three things at once:
 
 ---
 
-## The session ritual — what the student actually does
+## The session workflow
 
-**At the start of every Cursor session**, paste this. It is the whole protocol from the student's side.
+**At the start of every student working session**, the agent reads this spec and inspects the existing logs. It creates or resumes this chat's session file in `my_work/_research_log/sessions/` without asking the student to start logging. A session means a period of work, not a numbered class. Resume only the same chat and working session; use a unique filename suffix if another session already has that date and minute. The `session` field must match the filename stem.
 
-```
-@context/provenance_logging_spec.md
-
-Start a logging session. Create today's session file in _research_log/sessions/
-and log every substantive exchange per the spec, including disposition records
-for the previous turn. I'm on workbook step S__.
-```
+If the student has legacy logs at the repository root, read them for continuity. Do not move or overwrite them automatically. New records use the canonical `my_work/` location. If the workbook step is unknown, use `NA`; never postpone logging while waiting for it.
 
 **At any point**, to check the agent has not drifted:
 
@@ -66,7 +60,7 @@ Generate this week's research log summary per the spec.
 
 Read it. File corrections. Tick the review box.
 
-Four instructions, three of them one line. If the agent stops logging mid-session, that is what `LOG CHECK` is for — and the gap itself is honest data, so long as it is marked rather than backfilled silently.
+The start instruction is no longer required. `LOG CHECK`, closing the session and the student's weekly review remain useful checkpoints. If the agent stops logging mid-session, catch-up records must be marked as reconstructed rather than silently backdated.
 
 ---
 
@@ -75,7 +69,7 @@ Four instructions, three of them one line. If the agent stops logging mid-sessio
 Created in the student's project workspace at first session:
 
 ```
-_research_log/
+my_work/_research_log/
 ├── sessions/
 │   └── 2026-09-03_1014.jsonl        one file per session, append-only
 ├── decisions/
@@ -123,7 +117,7 @@ A turn is "substantive" if the agent produced anything the student could act on.
 | `ts` | ISO 8601 with `+08:00` | Macau time; never omit the offset |
 | `session` | filename stem | |
 | `turn` | integer | increments within a session |
-| `workbook_step` | `S1`–`S11`, or `NA` | ask the student if unclear; never guess |
+| `workbook_step` | `S1`–`S11`, or `NA` | use the stated step; if unclear, use `NA` rather than guessing or delaying the log |
 | `move` | see table below | exactly one, the dominant move |
 | `student_intent` | ≤ 20 words | the student's own words where possible, else your paraphrase |
 | `agent_output_kind` | see table below | |
@@ -204,7 +198,7 @@ When a disposition is `rejected` or `modified` **and the thing rejected was subs
 
 Substantive means: it would have changed the research question, the contribution claim, the method, the venue, the structure of the paper, or the form of the artifact. Not: word choice, a single citation, a colour.
 
-Write to `_research_log/decisions/DEC-NNN.md`, numbered sequentially:
+Write to `my_work/_research_log/decisions/DEC-NNN.md`, numbered sequentially:
 
 ```markdown
 ---
@@ -259,20 +253,21 @@ The agent log is written by the agent and could in principle be edited by the st
 
 **At the end of each workbook step, the agent runs:**
 
+Inspect the diff and stage the relevant work and log files explicitly, preserving unrelated changes. Then commit with a message in this form:
+
 ```bash
-git add -A
 git commit -m "S<step>: <short description> [log:<session>]"
 ```
 
 If the workspace is not a git repository, initialise it in the first session:
 
-```bash
-git init && git add -A && git commit -m "S0: workspace initialised"
-```
+Initialise git, inspect and stage the intended files, then commit as `S0: workspace initialised`. Do not sweep unrelated files into the first commit.
 
 The `[log:<session>]` tag lets the weekly integrity check match commits against sessions. Commit at least once per session even if no step completed.
 
 **Students: do not squash or rewrite history.** The messy history is the evidence.
+
+Push only when the student requests it, to their own remote. Never push coursework to the shared course repository.
 
 ---
 
@@ -284,7 +279,7 @@ At the end of each teaching week, the student asks the agent:
 Generate this week's research log summary.
 ```
 
-The agent reads the week's session files and writes `_research_log/weekly/WK-NN_summary.md`:
+The agent reads the week's session files and writes `my_work/_research_log/weekly/WK-NN_summary.md`:
 
 ```markdown
 # Week NN — 3–9 October 2026
@@ -324,7 +319,7 @@ Student review: [ ] read  [ ] corrections filed
 
 ## Integrity checks
 
-Weekly, the agent regenerates `_research_log/INTEGRITY.md`:
+Weekly, the agent regenerates `my_work/_research_log/INTEGRITY.md`:
 
 - sessions logged vs. git commits in the same period — flag mismatches
 - exchanges with no matching disposition record — flag if over 20%
@@ -342,7 +337,7 @@ The point is not policing. It is that a log with known, stated gaps is usable ev
 
 **What students submit, session 14 — 25 November:**
 
-- the complete `_research_log/` directory — sessions, decisions, weekly summaries, INTEGRITY.md
+- the complete `my_work/_research_log/` directory — sessions, decisions, weekly summaries, INTEGRITY.md
 - pushed to their GitHub repository, with the instructor holding read access from session 1
 - plus a one-page **log self-assessment**: total sessions, total decision records, any periods where logging lapsed and why, and the student's own honest note on whether the log reflects what actually happened
 
@@ -356,11 +351,12 @@ That last item matters more than it looks. A student who writes *"I stopped logg
 
 ## Reliability — read this honestly
 
-**The agent will drift.** Long sessions, complex tasks and absorbing work all make an agent forget standing instructions. Expect the log to degrade within a session. This is why the protocol is student-instructed rather than automated: the design assumes drift and puts the recovery in the student's hands.
+**The agent can still drift.** Long sessions, complex tasks and missing context can interrupt logging. Always-applied instructions make recording the default, but do not prove a file was written. Read-back checks, `LOG CHECK`, git history and the weekly student review make gaps visible.
 
 Mitigations, in order of how much they carry:
 
-- **the session-start instruction**, which re-establishes the protocol every time rather than relying on persistence
+- **root `AGENTS.md` and the always-applied logging rule**, which require the agent to start or resume logging on its own
+- **read-back after each write**, which checks that the record exists and parses as JSON
 - **`LOG CHECK`**, which surfaces gaps while the session is still live
 - **the weekly summary and sign-off**, which surfaces gaps while the week is still fresh
 - logging is instruction §0 of the agent file, before anything else
@@ -371,6 +367,22 @@ Mitigations, in order of how much they carry:
 **Do not grade on log volume.** A student who has a thin log because they worked mostly offline with paper and a plotter has not done worse work. What is assessed is whether the record supports the claims the student makes about their own process.
 
 **Automatic capture is not neutral.** Knowing the log exists changes behaviour — students may reject things performatively, or avoid asking questions that look naive. Watch for it, name it in class, and treat it as a finding rather than a contaminant. It belongs in the paper's limitations.
+
+---
+
+## Reconstructing earlier chats
+
+Use `course/guides/catch_up_research_logs.md` in each original Cursor chat. Work only from conversation history that is actually visible, or an export supplied by the student. Repository files and commits can corroborate actions; they cannot establish an unseen conversation, rejection or reason.
+
+- Inspect existing logs, including legacy locations, and skip exchanges already recorded. Reuse a stable `source_chat` identifier and this chat's catch-up file on a repeat run; never create duplicates to increase the count.
+- Every reconstructed exchange, disposition or correction has `reconstructed: true`. Exchange records also carry the `reconstructed` flag. Reconstructed decision files carry the marker in their front matter.
+- `ts` is the actual recording time with `+08:00`, not an invented historical timestamp. Include optional `original_ts` only when the original timestamp is visible. Unknown original times stay unknown.
+- Include `source_chat` and `source_turn`: the visible chat ID/title or a student-provided label, and the source message ID/position. Record the visible range if history is partial; do not claim to have recovered omitted turns. If no stable chat label is available, ask for one before reconstructing.
+- Log every substantive exchange supported by the source, including actionable advice and failures. Record observed dispositions; use `unknown` when the outcome is not visible. Never invent acceptance, rejection, a reason, citation verification or tool execution.
+- Existing logs stay append-only. Append corrections with references to the original record. Do not erase a contemporaneous record merely to replace it with a reconstruction.
+- Update the integrity report to distinguish live and reconstructed records and list gaps. Reconstructed records belong to their source period when that period is known; writing them today must not make them appear to be live work done today. Preserve student review marks and leave new sign-off boxes unticked.
+
+Reconstruction is an honest catch-up record, not a claim of contemporaneous logging. Do not create artificial sessions to fill teaching-week quotas, and do not paste credentials, raw participant data or entire private transcripts into the log. Use short, evidence-based summaries.
 
 ---
 

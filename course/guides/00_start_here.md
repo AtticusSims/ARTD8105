@@ -87,18 +87,14 @@ Report only. Do not fix anything yet.
 
 7. **Write process journal entry #1** within twenty-four hours of session 1, into `my_work/process_journal/`, named by date. Copy the template out of `course/templates/` first — never fill one in where it sits. The journal is graded, it cannot be reconstructed later, and in session 11 you will read the whole thing back looking for your finding.
 
-**Then, from session 3 onwards**, open every working session with this:
+**Logging now starts automatically.** Get the latest course files and work in
+your own repository in Cursor's Agent mode. The agent creates or resumes the
+session log under `my_work/_research_log/`; no start-logging prompt is needed.
+Use **`LOG CHECK`** to confirm the file exists and see any gaps. Review the weekly
+summary yourself, and commit and push your work.
 
-```
-@context/provenance_logging_spec.md
-
-Start a logging session. Create today's session file in
-my_work/_research_log/sessions/ and log every substantive exchange per the
-spec, including disposition records for the previous turn. I'm on workbook
-step S__.
-```
-
-The standing rules load themselves. The logging instruction does not — it is the one thing you have to say out loud each time. Four short rituals carry the whole system: **start a session · `LOG CHECK` if it goes quiet · close the session · weekly summary.**
+For earlier unlogged work, follow `course/guides/catch_up_research_logs.md` in
+**each original Cursor chat**. Reconstructed records must be labelled honestly.
 
 ---
 
@@ -114,7 +110,7 @@ The standing rules load themselves. The logging instruction does not — it is t
 
 ## About the log
 
-The agent keeps a record of your work as you go — what you asked, what it produced, what you did with it. **You do not compose the entries. You start the session, and the agent writes them while you work.**
+The agent keeps a record of your work as you go — what you asked, what it produced, what you did with it. **You do not compose the entries or request logging each time. The agent starts the log and writes it while you work.**
 
 It exists for two reasons. It is your evidence of authorship, which the rubric assesses. And it is the material you analyse in Step 8 to find what your project actually revealed — that analysis is where most students' findings come from.
 
