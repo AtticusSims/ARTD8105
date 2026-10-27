@@ -5,6 +5,12 @@ Semester 1, 2026/27 · Section 001 · Atticus Sims
 
 This repository holds everything you need for the course. Open it in Cursor at the start of every working session and the agent picks up its instructions automatically.
 
+## Session 10 — 28 October
+
+- [Journal analysis and paper structure](projects/10_journal_to_structure/brief.md): use your records to test a finding and plan the paper.
+- [Paper drafting](projects/11_paper_draft/brief.md): develop your own draft one section at a time with agent critique.
+- **Draft v1 and figure plan are due 11 November, replacing 4 November.** Review and revision are scheduled for **18 November**; activity details will be confirmed separately.
+
 ---
 
 ## Setting it up — once, in session 2

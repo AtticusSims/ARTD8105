@@ -4,6 +4,16 @@ What changed, and when. Run `git pull course main` to get it.
 
 ---
 
+## 2026-10-27 — journal analysis, structure and drafting
+
+- Added guided projects for analysing journal evidence, testing claims, planning
+  venue-based paper structures and drafting the student's own prose section by section.
+- Draft v1 plus figure plan is now due **11 November**, replacing 4 November.
+- Review and revision are scheduled for **18 November**; activity details will be
+  confirmed separately. Final submission remains 25 November.
+
+---
+
 ## 2026-10-15 — automatic research logging
 
 - Added root `AGENTS.md` and made the Cursor logging rule always apply. The agent

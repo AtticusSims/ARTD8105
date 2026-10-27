@@ -164,8 +164,8 @@ missing while there is still time to make it.
 |---|---|
 | 9 · 21 Oct | |
 | 10 · 28 Oct — idea evaluation revised | |
-| 11 · 4 Nov — draft v1 | |
-| 12 · 11 Nov — mock review; idea evaluation revised | |
+| 11 · 4 Nov — continue making/drafting; field trip | |
+| 12 · 11 Nov — draft v1 and figure plan due | |
 | 14 · 25 Nov — submission package | |
 
 ---

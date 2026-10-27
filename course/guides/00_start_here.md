@@ -147,11 +147,15 @@ This is not paranoia. **Two of the three "required readings" listed in this cour
 | 8 | 14 Oct | Live input and interaction. Claim v1. |
 | 9 | 21 Oct | Capture, scanning, XR, trained models. Last new tool. |
 | 10 | 28 Oct | Analyse your own journal. Paper structure. |
-| 11 | 4 Nov | Studio. **Draft v1 due.** Exhibition planning opens. |
-| **12** | **11 Nov** | **Mock review — you review a peer using their venue's real form.** |
-| 13 | 18 Nov | Revision. Bibliography audit. Documentation. |
+| 11 | 4 Nov | **Shenzhen field trip** — logistics confirmed separately. Exhibition planning opens. |
+| **12** | **11 Nov** | **Draft v1 and figure plan due; drafts circulated for review.** |
+| 13 | 18 Nov | Review and revision. Bibliography audit. Documentation. Exhibition work ready. |
 | **14** | **25 Nov** | **Final critique. Submission package due.** |
-| after | TBC | Faculty exhibition. Revise toward the real deadline. Supervision continues. |
+| TBC | TBC | Faculty exhibition — date and venue to be confirmed. Revise toward the real deadline. Supervision continues. |
+
+**27 October update:** Draft v1 has moved from 4 to 11 November. Review and revision are scheduled for 18 November; activity details will follow.
+Prepare exhibition work by 18 November; the exact group-show date and venue remain
+to be confirmed. Final critique and submission remain 25 November.
 
 **On that last row.** Only one significant deadline falls inside the semester. Most fall three to ten months later. What you finish in session 14 is a *submission-ready manuscript*, not a submitted one — and the work of placing it continues past grading. Plan for that now, so the paper does not feel like an assignment that dies at the end of term.
 

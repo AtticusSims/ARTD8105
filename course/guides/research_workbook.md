@@ -4,8 +4,12 @@
 > Your own work goes in `my_work/`. To use a template, copy it there first.
 > *If a pull ever fails with "local changes would be overwritten", you edited something in here.*
 
-**ARTD8105 · v1.2 · 6 October 2026**
+**ARTD8105 · v1.3 · 27 October 2026**
 *From reading to submission-ready manuscript, in eleven steps.*
+
+**Timeline update:** Draft v1 and figure plan are due **11 November**, replacing
+4 November. Review and revision are scheduled for 18 November; activity details will be
+confirmed separately. Final submission remains 25 November.
 
 ---
 
@@ -33,8 +37,8 @@ Each step carries **💬 USE THE AGENT** blocks: worked starting prompts with `[
 | 6 | `idea_evaluation.md` + contribution type declared | **Session 8 · 14 Oct — assessed** |
 | 7 | `claim.md` | Session 9 · 21 Oct |
 | 8 | process journal, continuous; artifacts | Sessions 8–11 |
-| 9 | `draft_v1.md` + figure plan | Session 11 · 4 Nov |
-| 10 | mock review given and received | **Session 12 · 11 Nov — assessed** |
+| 9 | `paper/draft_v1.md` + `paper/figure_plan.md` | Session 12 · 11 Nov |
+| 10 | mock review given and received | **Session 13 · 18 Nov — review and revision; details to follow** |
 | 11 | submission package | **Session 14 · 25 Nov — assessed** |
 
 *Steps are counted in **sessions**, not calendar weeks. The two do not line up: there are 15 Wednesdays in the term and 14 numbered sessions, because 30 September carries a guest lecture rather than a session of this course. Steps 4, 5 and 6 are started together at session 7 and are all due on 14 October, at session 8.*
@@ -293,7 +297,11 @@ do you see that I haven't named? Quote the entries you're drawing on.
 ---
 
 # STEP 9 — Structure and draft
-**Session 11 · 4 November · Output: `draft_v1.md` + figure plan**
+**Draft due Session 12 · 11 November · Output: `my_work/paper/draft_v1.md` + `figure_plan.md`**
+
+Start with `projects/10_journal_to_structure/journal_structure_agent.md` for the
+evidence analysis and outline, then use `projects/11_paper_draft/drafting_agent.md`
+to develop your own prose one section at a time.
 
 ### Analyse before you write
 
@@ -320,12 +328,20 @@ that best evidence my claim, with dates and quotes. For each, say which
 section of the paper it belongs in.
 ```
 
-**Output check:** complete draft at the venue's word count, full figure plan, every claim traceable to journal or artifact.
+**Output check:** a coherent first draft across the planned argument, working length
+checked against the venue's rules, full figure plan and claims traceable to evidence.
+Label unresolved evidence/source/figure gaps and give each a concrete next action;
+do not present planned results as completed findings.
 
 ---
 
 # STEP 10 — Mock review
-**Session 12 · 11 November — ASSESSED**
+**Session 13 · 18 November · Review and revision**
+
+**27 October update:** 18 November is reserved for review and revision. The instructor
+will confirm the activity format separately. The peer-review scaffold below remains
+available; if a full-draft review is assigned, read the paper and venue file and
+prepare the written review before class. Presentations supplement that reading.
 
 Two parts.
 

@@ -33,9 +33,9 @@ No examination. Full criteria in `context/assessment_rubric.md`.
 
 Read the three components as one piece of work. The case study is where the bibliography comes from and what tells the student what the project should be.
 
-## The four graded moments
+## Course milestones
 
-23 September — first fabrication output · 7 October — idea evaluation defended · 11 November — presentation, peer review, oral authorship check · 25 November — submission package and final critique.
+23 September — first fabrication output · 7 October — idea evaluation defended · 11 November — Draft v1 and figure plan due · 18 November — review and revision, format to be confirmed · 25 November — submission package and final critique.
 
 ## The line on AI
 

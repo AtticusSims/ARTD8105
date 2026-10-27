@@ -51,7 +51,7 @@ Everything is scored on a four-point scale. **2.75 is the threshold** — the le
 |---|---|
 | **23 Sep** | First successful 3D print — a checkpoint, deliberately low-stakes |
 | **7 Oct** | You commit to a research question, say what kind of contribution you are making, and defend both in class |
-| **11 Nov** | Presentation, the written review you give a peer, oral authorship check |
+| **Review/revision · 18 Nov — format to be confirmed** | Presentation, the written review you give a peer, oral authorship check |
 | **25 Nov** | Finished paper, your work record, your process journal, and a final critique of exhibition-ready work |
 
 Everything else is formative. You will get feedback constantly and marks rarely.
@@ -236,7 +236,7 @@ Beyond individual prompts, you can give the agent standing background — a docu
 
 ## D4 · Authorship — verified orally
 
-Checked in tutorial and at the 11 November presentation, not through a written form.
+Checked in tutorial and at the mock-review presentation, not through a written form.
 
 You may be asked to explain any line of submitted code, any sentence of your manuscript, or to identify which material was AI-assisted.
 
